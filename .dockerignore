@@ -1,0 +1,13 @@
+# git
+.git/
+.gitignore
+.gitkeep
+
+# vscode
+.vscode/
+.devcontainer/
+*.code-workspace
+
+# misc
+.DS_Store
+*.md

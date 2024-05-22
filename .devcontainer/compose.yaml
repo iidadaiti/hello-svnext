@@ -1,0 +1,10 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+      target: dev
+    volumes:
+      - .:/app:cached
+    tty: true
+    command: /bin/sh -c "sleep infinity"
