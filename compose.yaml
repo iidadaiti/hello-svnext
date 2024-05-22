@@ -9,3 +9,13 @@ services:
     ports:
       - 5173:5173
     tty: true
+  api:
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile
+      target: dev
+    volumes:
+      - ./api:/app:cached
+    ports:
+      - 3000:3000
+    tty: true
