@@ -12,7 +12,8 @@ RUN apt-get update -qq \
     git \
     openssh-server \
     tini \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && pnpm dlx playwright install-deps
 COPY --chown=node:node . /app
 ENTRYPOINT ["/usr/bin/tini", "--"]
 USER node
