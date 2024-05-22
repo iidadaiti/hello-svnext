@@ -1,3 +1,7 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
 # vscode
 .vscode/settings.json
 *.code-workspace
