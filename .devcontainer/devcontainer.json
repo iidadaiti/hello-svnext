@@ -9,6 +9,9 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"svelte.svelte-vscode",
 				"ms-azuretools.vscode-docker",
 				"eamodio.gitlens"
 			]
