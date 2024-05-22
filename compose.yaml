@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./app/Dockerfile
+      target: dev
+    volumes:
+      - ./app:/app:cached
+    ports:
+      - 5173:5173
+    tty: true
